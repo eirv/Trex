@@ -6,7 +6,7 @@
 }
 
 -if class io.github.eirv.trex.TrexAndroid {
-    setThrowableProxyMethods(...);
+    hookNativeFunc(...);
 }
 -keepclassmembers class io.github.eirv.trex.TrexAndroid {
     proxy(...);
