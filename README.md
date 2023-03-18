@@ -11,7 +11,7 @@
 > 远程仓库
 ```gradle
 repositories {
-    maven { url 'https://github.com/eirv/trex/raw/main/maven' }
+    maven { url 'https://github.com/eirv/Trex/raw/main/maven' }
 }
 ```
 ```gradle
@@ -48,11 +48,11 @@ try {
 
 > 默认样式
 
-<img src='https://github.com/eirv/Trex/raw/master/imgs/preview_trex_default.png'>
+<img src='https://github.com/eirv/Trex/raw/main/imgs/preview_trex_default.png'>
 
 > 安卓 JNI 样式
 
-<img src='https://github.com/eirv/Trex/raw/master/imgs/preview_trex_jni.png'>
+<img src='https://github.com/eirv/Trex/raw/main/imgs/preview_trex_jni.png'>
 
 ### 安卓自带
 
