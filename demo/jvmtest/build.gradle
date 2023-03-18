@@ -1,0 +1,17 @@
+plugins {
+    id 'application'
+}
+
+sourceCompatibility = rootProject.ext.java
+targetCompatibility = rootProject.ext.java
+
+dependencies {
+    implementation project(':trex:jvm')
+    implementation project(':demo:test')
+
+    testImplementation 'junit:junit:4.13.2'
+}
+
+application {
+    mainClass = 'io.github.eirv.trex.demo.Main'
+}

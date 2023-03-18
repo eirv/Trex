@@ -1,0 +1,19 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'android.stub'
+    compileSdk rootProject.ext.compileSdk
+    buildToolsVersion rootProject.ext.buildTools
+
+    defaultConfig {
+        minSdk 1
+        targetSdk rootProject.ext.targetSdk
+    }
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.java
+        targetCompatibility rootProject.ext.java
+    }
+}

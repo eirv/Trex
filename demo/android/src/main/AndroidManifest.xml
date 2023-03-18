@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@android:style/Theme.DeviceDefault">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CrashHandler$CrashActivity"
+            android:autoRemoveFromRecents="true"
+            android:configChanges="screenSize|orientation"
+            android:label="ERROR"
+            android:launchMode="singleTask"
+            android:process=":eirv_crashhandler"
+            android:taskAffinity="${applicationId}.crashhandler"
+            android:theme="@android:style/Theme.DeviceDefault" />
+    </application>
+
+</manifest>

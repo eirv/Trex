@@ -1,0 +1,33 @@
+pluginManagement {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Trex"
+
+include ':demo:test'
+include ':demo:android'
+include ':demo:jvmtest'
+
+include ':trex:android'
+include ':trex:jvm'
+
+include ':stub'

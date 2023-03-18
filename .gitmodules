@@ -1,0 +1,3 @@
+[submodule "trex/android/src/main/cpp/dobby"]
+	path = trex/android/src/main/cpp/dobby
+	url = https://github.com/LSPosed/Dobby.git

@@ -1,0 +1,22 @@
+plugins {
+    id 'com.android.application' version '7.4.1' apply false
+    id 'com.android.library' version '7.4.1' apply false
+}
+
+ext {
+    compileSdk = 33
+    buildTools = '33.0.0'
+    ndk = '23.2.8568313'
+    cmake = '3.22.1'
+    java = JavaVersion.VERSION_1_8
+
+    minSdk = 14
+    targetSdk = 33
+    version = '1.0.0-alpha'
+    versionCode = 1
+
+    groupId = 'io.github.eirv.trex'
+    name = 'trex'
+    description = '获取更详细的Java堆栈信息,即使清除调试信息并混淆也能知道那个方法报错'
+    mavenUrl = "file://${rootDir}/maven"
+}

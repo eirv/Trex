@@ -1,0 +1,36 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+sourceCompatibility = rootProject.ext.java
+targetCompatibility = rootProject.ext.java
+
+sourceSets {
+    main {
+        java.srcDirs += '../common'
+    }
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = rootProject.ext.groupId
+            artifactId = 'jvm'
+            version = rootProject.ext.version
+            artifact("$buildDir/libs/jvm.jar")
+
+            pom {
+                name = rootProject.ext.name
+                description = rootProject.ext.description
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            name = "LocalMaven"
+            url = uri(rootProject.ext.mavenUrl)
+        }
+    }
+}

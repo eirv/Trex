@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.github.eirv.trex</groupId>
+  <artifactId>jvm</artifactId>
+  <version>1.0.0-alpha</version>
+  <name>trex</name>
+  <description>获取更详细的Java堆栈信息,即使清除调试信息并混淆也能知道那个方法报错</description>
+</project>
